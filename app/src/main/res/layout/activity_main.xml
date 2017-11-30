@@ -27,11 +27,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-<<<<<<< HEAD
-
-=======
         android:inputType="textPersonName"
->>>>>>> be3fe90dff524dda4c9f270eca2c229ba4d6b9cd
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -84,7 +81,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
-<<<<<<< HEAD
+
 
     <TextView
         android:id="@+id/textView"
@@ -102,7 +99,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.215" />
-=======
->>>>>>> be3fe90dff524dda4c9f270eca2c229ba4d6b9cd
+
 
 </android.support.constraint.ConstraintLayout>
