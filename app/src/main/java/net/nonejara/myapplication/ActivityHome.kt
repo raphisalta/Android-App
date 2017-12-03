@@ -11,12 +11,11 @@ class ActivityHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+    }
 
-        val button2 = findViewById<View>(R.id.button2) as Button
-        button2.setOnClickListener{
-
-        }
+    fun moveMain(view:View){
+        val mainintent = Intent(this, MainActivity::class.java)
+        startActivity(mainintent)
     }
 }
-
 

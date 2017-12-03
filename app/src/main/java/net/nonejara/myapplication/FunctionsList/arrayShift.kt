@@ -1,4 +1,4 @@
-package net.nonejara.myapplication
+package net.nonejara.myapplication.FunctionsList
 
 import android.app.Activity
 import android.util.Log

@@ -10,7 +10,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="配列入れ替えアルゴリズム"
+        android:text="@string/main_title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -26,7 +26,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="問題：[a,b,c,d,e,f,g,h]"
+        android:text="@string/abcde"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,5 +97,16 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mainToHome"
+        android:onClick="moveHome"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="4dp"
+        tools:text="@string/mainToHome"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>

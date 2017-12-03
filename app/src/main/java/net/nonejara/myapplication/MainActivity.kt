@@ -1,5 +1,6 @@
 package net.nonejara.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -8,8 +9,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
-import net.nonejara.myapplication.R.id.editText
-import net.nonejara.myapplication.R.id.textView
+import net.nonejara.myapplication.FunctionsList.arrayShift
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val textView = findViewById<View>(R.id.textView) as TextView
-        textView.text = "問題：[a,b,c,d,e,f,g,h]"
+       textView.text = "問題：[a,b,c,d,e,f,g,h]"
 
         val message = findViewById<View>(R.id.message) as TextView
         message.text = ""
@@ -37,5 +37,10 @@ class MainActivity : AppCompatActivity() {
             }
             Log.d("MainActivity", "index is $index")
         }
+   }
+    fun moveHome(view : View){
+        Log.d("MainActivity", "moveHome関数は呼び出されてるよ！");
+        val homeintent = Intent(this, ActivityHome::class.java)
+        startActivity(homeintent)
     }
 }
